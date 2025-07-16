@@ -1,0 +1,6 @@
+/* Custom styling for navbar logo */
+
+/* Make navbar logo have rounded corners */
+.navbar-brand img {
+    border-radius: 8px;
+}

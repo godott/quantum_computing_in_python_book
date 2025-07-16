@@ -1,6 +1,6 @@
 format: jb-book
 root: preface
 chapters:
-  - file: history.md
+  - file: chap0.md
   - file: chapter1.ipynb
   - file: Quantum_Gates_Lecture.ipynb

@@ -2,7 +2,7 @@
 title: Build a Quantum Stack
 author: Yunong Shi
 copyright: "2025"
-logo: figures/preface.png  # Optional: add a logo
+logo: figures/navibar.png  # Optional: add a logo
 
 # Force re-execution of notebooks on each build
 execute:
@@ -23,21 +23,23 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/godott/quantum_computing_in_python_book
+  url: https://github.com/godott/quantum-book
   path_to_book: ""
   branch: main
 
 # HTML-specific settings
 html:
-  favicon: ""
+  favicon: "figures/favicon.svg"
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
   use_download_button: true
   # Fix for relative paths in GitHub Pages
-  baseurl: "/quantum_computing_in_python_book/"
+  baseurl: "/quantum-book/"
   navbar_number_sections: false
   home_page_in_navbar: false
+  # Use Sphinx Awesome theme
+  theme: sphinxawesome_theme
   
 # Launch button settings
 launch_buttons:
@@ -51,6 +53,8 @@ sphinx:
     # Fix image paths for GitHub Pages
     html_sourcelink_suffix: ""
     nb_execution_mode: "auto"
+    html_static_path: ["_static"]
+    html_css_files: ["custom.css"]
     
   extra_extensions:
     - sphinx.ext.intersphinx

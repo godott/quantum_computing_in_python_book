@@ -4,7 +4,7 @@ Example usage of the refactored Bloch sphere visualization.
 
 import numpy as np
 import os
-from bloch import Bloch, QuantumState, pauli_x, pauli_y, pauli_z
+from qsip.visualization.bloch import Bloch, QuantumState, pauli_x, pauli_y, pauli_z
 
 # Create output directory
 output_dir = "bloch_outputs"
