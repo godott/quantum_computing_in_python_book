@@ -4,7 +4,7 @@ Example usage of the refactored Bloch sphere visualization.
 
 import numpy as np
 import os
-from bloch_refactored import Bloch, QuantumState
+from bloch import Bloch, QuantumState, pauli_x, pauli_y, pauli_z
 
 # Create output directory
 output_dir = "bloch_outputs"
@@ -117,17 +117,6 @@ def example_mixed_states():
     
     b.save(name=os.path.join(output_dir, 'example_mixed_states.png'), dpin=300)
     print(f"Saved: {output_dir}/example_mixed_states.png")
-
-
-# Helper functions for Pauli matrices
-def pauli_x():
-    return np.array([[0, 1], [1, 0]], dtype=complex)
-
-def pauli_y():
-    return np.array([[0, -1j], [1j, 0]], dtype=complex)
-
-def pauli_z():
-    return np.array([[1, 0], [0, -1]], dtype=complex)
 
 
 if __name__ == "__main__":

@@ -25,9 +25,7 @@ In 1981, at an MIT conference, Feynman did what Feynman did best: cut through th
 </figure>
 
 
-Classic Feynman: part rant, part roadmap. A year later, he spelled it out—quantum systems get exponentially more complex as you add particles [(Feynman, 1982)](https://doi.org/10.1007/BF02650179). Classical machines just couldn’t keep up. But quantum ones? Maybe.
-
-Feynman wasn’t daydreaming about factoring primes or breaking RSA. He was after something messier: chemistry, condensed matter, quantum field theory. He wanted a machine that could speak nature’s native tongue. One that could **simulate the universe on its own terms**.
+Classic Feynman: part rant, part roadmap. A year later, he spelled it out—quantum systems get exponentially more complex as you add particles [(Feynman, 1982)](https://doi.org/10.1007/BF02650179). Classical machines just couldn’t keep up. But quantum ones? Yes. Feynman wanted a machine that could speak nature’s native tongue. One that could **simulate the universe on its own terms**.
 
 
 But, a computer should also do computation, right? That’s a natural question to ask—and by the mid-'80s, people finally started asking it. Maybe quantum machines weren’t just exotic physics toys. Maybe they could actually *compute*—faster, stranger, and more powerfully than classical ones.
@@ -95,7 +93,15 @@ Meanwhile, the theory kept evolving. Among the most influential advances were in
   </figcaption>
 </figure>
 
-And yet, full fault tolerance was still far away. In the meantime, a new era took shape—coined the **NISQ** era by John Preskill in 2018, short for Noisy Intermediate-Scale Quantum [(Preskill, 2018)](https://doi.org/10.22331/q-2018-08-06-79). These were the years of imperfect machines: tens or hundreds of qubits, noisy and uncorrected, but still powerful enough to experiment with. Researchers explored variational algorithms, quantum machine learning, and hybrid quantum-classical approaches. The results were mixed, sometimes hyped beyond recognition, but they marked a crucial phase: learning to program machines that weren’t quite ready, and dreaming of what might be possible when they were.
+And yet, full fault tolerance was still far away. In the meantime, a new era took shape—coined the **NISQ** era by John Preskill in 2018, short for Noisy Intermediate-Scale Quantum [(Preskill, 2018)](https://doi.org/10.22331/q-2018-08-06-79). These were the years of imperfect machines: tens or hundreds of qubits, noisy and uncorrected, but still powerful enough to experiment with. Researchers explored variational algorithms [(Peruzzo, 2013)](http://dx.doi.org/10.1038/ncomms5213), quantum machine learning, and hybrid quantum-classical approaches. The results were mixed, sometimes hyped beyond recognition, but they marked a crucial phase: learning to program machines that weren’t quite ready, and dreaming of what might be possible when they were.
+
+<figure>
+  <img src="figures/vqe_sketch.png" alt="Variational Quantum Eigensolver" style="width: 100%; max-width: 600px; height: auto;" />
+  <figcaption>
+  The Variational Quantum Eigensolver (VQE): a quantum circuit prepares a parameterized state, and measurements are sent to a classical optimizer, which updates the parameters to minimize the energy. This hybrid quantum-classical loop is a central algorithmic design in the NISQ era due to its robustness to noise and its ability to leverage classical resources.
+  </figcaption>
+</figure>
+
 
 Then, in 2019, a claim that made headlines: Google’s Sycamore processor had achieved *quantum supremacy*—performing a task in 200 seconds that would take the best classical supercomputer thousands of years [(Arute et al., 2019)](https://doi.org/10.1038/s41586-019-1666-5). Critics debated its relevance. Supporters called it a milestone. Either way, it marked the arrival of real hardware that could do something classically infeasible.
 
@@ -127,13 +133,13 @@ But the pieces are aligning. Below-threshold hardware. Logical qubits. Compiler 
 
 It’s not about more qubits. It’s about better ones. Deeper integration. Smarter compilers. Verified control. Hybrid algorithms. And above all: building the quantum software stack that can tame the machine.
 
-## Back to our book
+## Back to Our Book
 
 You stand at the intersection of all four eras:
 
 - The *Enlightenment* gave us language.
 - The *Foundations* gave us proof.
-- *Experimentation* gave us machines.
+- *Experimentation* gave us prototypes.
 - And *Scaling* asks us to build what comes next.
 
 This book is about that task. We won’t build a quantum chip. But we’ll build *everything else*. From first principles. In Python. No Qiskit, no magic.
