@@ -17,7 +17,7 @@ In 1981, at an MIT conference, Feynman did what Feynman did best: cut through th
 
 ```{figure} figures/MIT-1981.jpg
 :name: mit-1981
-:width: 600px
+:width: 700px
 :align: center
 
 The 1981 Physics of Computation Conference held at the historic [MIT Endicott House](https://mitendicotthouse.org/physics-computation-conference/). Image courtesy of MIT Endicott House.
@@ -100,7 +100,7 @@ Then, in 2019, a claim that made headlines: Google’s Sycamore processor had ac
 
 By 2024, that promise deepened. Google’s **Willow** chip broke below the fabled fault-tolerance threshold with 105 qubits—demonstrating not just performance, but stability. For the first time, *exponential error suppression wasn’t just an idea—it was an engineering reality* [(Acharya et al., 2025)](https://doi.org/10.1038/s41586-024-08449-y). Many in the community saw this as a turning point—the moment the field crossed from the age of experimentation into the age of scaling. The foundational pieces were now in place. The question was no longer *if* we could build fault-tolerant quantum computers. It was *how far* and *how fast* we could scale them.
 
-IBM, Intel, IonQ, Honeywell, and others followed close behind. Progress was uneven, full of noise—literal and metaphorical—but unmistakable. Quantum computers, still small and fragile, had begun to breathe.
+IBM, QuEra, IonQ, Quantinuum, and others followed close behind. Progress was uneven, full of noise—literal and metaphorical—but unmistakable. Quantum computers, still small and fragile, had begun to breathe.
 
 ```{figure} figures/ibm_quantum_computer.jpg
 :name: ibm-quantum
@@ -123,7 +123,16 @@ Quantum computers are no longer hypothetical. They’re no longer lab toys or is
 
 But the pieces are aligning. Below-threshold hardware. Logical qubits. Compiler stacks. High-fidelity control. What remains is synthesis: taking these fragments and turning them into **quantum computers that solve problems humans care about**.
 
-It’s not about more qubits. It’s about better ones. Deeper integration. Smarter compilers. Verified control. Hybrid algorithms. And above all: building the quantum software stack that can tame the machine.
+```{figure} figures/sc_scale.png
+:name: sc_qubit_count
+:width: 700px
+:align: center
+
+Historical and projected growth in the number of qubits for superconducting quantum devices, highlighting key milestones and roadmap targets. Note: Qubit count is only one of many metrics, and this plot includes just a representative but not exhaustiveselection of superconducting-circuit based devices.
+```
+
+
+It’s not about more qubits. It’s about better ones. Deeper integration. Smarter compilers. Scalable control. Hybrid algorithms. And above all: building the quantum software stack that can tame the machine.
 
 ## Back to Our Book
 
