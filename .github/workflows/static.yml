@@ -48,6 +48,10 @@ jobs:
       - name: Build the book
         run: jupyter-book build .
 
+      # Add .nojekyll file to prevent GitHub Pages Jekyll processing
+      - name: Add .nojekyll file
+        run: touch _build/html/.nojekyll
+
       # Configure GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
