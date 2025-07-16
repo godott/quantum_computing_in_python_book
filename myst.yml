@@ -1,0 +1,16 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Build A Quantum Computing Stack in Python
+  description: A quantum computing text book.
+  keywords: [Quantum Computing]
+  authors: [Yunong Shi]
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+    
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+  navbar_title: Build a Quantum Stack
