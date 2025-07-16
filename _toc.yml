@@ -6,4 +6,5 @@ chapters:
     sections:
       - file: chap1-1
       - file: chap1-2
+      - file: chap1-3
   - file: Quantum_Gates_Lecture

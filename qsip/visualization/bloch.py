@@ -199,8 +199,8 @@ class Bloch:
         
         # Enhanced visual settings for better aesthetics
         # Warmer, creamier white sphere
-        self.sphere_color = '#FFF8E7'  # Creamy white with warm undertone
-        self.sphere_alpha = 0.35  # Slightly more opaque for creamier appearance
+        self.sphere_color = '#FFFAF0'  # Floral white - creamier, warmer tone
+        self.sphere_alpha = 0.4  # More opaque for richer cream appearance
         self.frame_color = '#8B7355'  # Warm brown for frame
         self.frame_width = 0.8  # Thinner frame lines
         self.frame_alpha = 0.2  # More subtle frame
@@ -220,27 +220,27 @@ class Bloch:
         self.zlabel = [r'$|0⟩$', r'$|1⟩$']  # Using Unicode bracket for cleaner look
         self.zlpos = [1.35, -1.35]  # Moved further out to avoid vector overlap
         
-        # Vector options with rich Morandi color scheme
-        # Rich, saturated Morandi colors for better visibility
+        # Vector options with enhanced subtle Morandi color scheme
+        # Richer, more sophisticated Morandi palette
         self.vector_default_color = [
-            '#C67856',  # Rich burnt sienna (warm terracotta)
-            '#5C8A72',  # Deep sage green (forest undertone)
-            '#8B7399',  # Rich mauve (deeper purple-grey)
-            '#B56576',  # Deep dusty rose (more saturated)
-            '#A68B5B',  # Rich ochre (golden brown)
-            '#6B85A3',  # Deep steel blue (stormy blue)
+            '#D4A574',  # Warm camel (enhanced terracotta)
+            '#739E82',  # Sage green (richer, more vibrant)
+            '#A08CA8',  # Lavender grey (deeper purple undertone)
+            '#C48B9F',  # Dusty mauve (enhanced rose)
+            '#BDA16A',  # Golden sand (richer ochre)
+            '#7C95B3',  # Dusty blue (enhanced steel blue)
         ]
         self.vector_color = []
-        self.vector_width = 2.2  # Slightly thicker for rich appearance
+        self.vector_width = 1.8  # Sharper, cleaner vector lines
         self.vector_style = '->'  # Sharp arrow style
-        self.vector_mutation = 12  # Proportional arrowheads
+        self.vector_mutation = 10  # Smaller, sharper arrowheads
         
-        # Point options with rich Morandi colors (matching vectors)
+        # Point options with enhanced subtle Morandi colors (matching vectors)
         self.point_default_color = [
-            '#C67856',  # Rich burnt sienna
-            '#5C8A72',  # Deep sage green
-            '#8B7399',  # Rich mauve
-            '#B56576',  # Deep dusty rose
+            '#D4A574',  # Warm camel
+            '#739E82',  # Sage green
+            '#A08CA8',  # Lavender grey
+            '#C48B9F',  # Dusty mauve
         ]
         self.point_color = None
         self._inner_point_color = []
