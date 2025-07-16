@@ -1,0 +1,27 @@
+# Core scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Jupyter and notebook support
+jupyter>=1.0.0
+notebook>=6.4.0
+ipykernel>=6.0.0
+ipython>=7.30.0
+
+# Jupyter Book and MyST
+jupyter-book>=0.15.0
+myst-nb>=0.17.0
+myst-parser>=0.18.0
+
+# Additional dependencies for notebook execution
+nbformat>=5.1.0
+nbconvert>=6.0.0
+
+# Optional but recommended for better notebook experience
+ipywidgets>=7.6.0
+
+# For building and packaging
+packaging>=21.0
