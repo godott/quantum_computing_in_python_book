@@ -15,14 +15,13 @@ But what would such a machine actually *do*? Enter Richard Feynman.
 
 In 1981, at an MIT conference, Feynman did what Feynman did best: cut through the noise with a provocative question. *Why are we simulating quantum systems with classical computers?* he barked. "Nature isn’t classical, dammit—if you want to simulate nature, you’d better make it quantum."
 
-<figure>
-  <img src="figures/MIT-1981.jpg" alt="MIT Endicott House 1981" style="width: 100%; max-width: 600px; height: auto;" />
-  <figcaption>
-    The 1981 Physics of Computation Conference held at the historic 
-    <a href="https://mitendicotthouse.org/physics-computation-conference/" target="_blank">MIT Endicott House</a>. 
-    Image courtesy of MIT Endicott House.
-  </figcaption>
-</figure>
+```{figure} figures/MIT-1981.jpg
+:name: mit-1981
+:width: 600px
+:align: center
+
+The 1981 Physics of Computation Conference held at the historic [MIT Endicott House](https://mitendicotthouse.org/physics-computation-conference/). Image courtesy of MIT Endicott House.
+```
 
 
 Classic Feynman: part rant, part roadmap. A year later, he spelled it out—quantum systems get exponentially more complex as you add particles [(Feynman, 1982)](https://doi.org/10.1007/BF02650179). Classical machines just couldn’t keep up. But quantum ones? Yes. Feynman wanted a machine that could speak nature’s native tongue. One that could **simulate the universe on its own terms**.
@@ -50,13 +49,13 @@ In 1994, Peter Shor stood before a stunned auditorium and revealed something ast
 
 It wasn’t just a trick. It was a watershed. Shor’s algorithm marked the moment when quantum computing stepped out of the realm of toy problems and into the world of real-world relevance. Suddenly, the question was no longer "Is this interesting?" but "Can we actually build it?"
 
-<figure style="text-align: center;">
-  <img src="figures/peter_shor.jpg" alt="Peter Shor" style="width: 100%; max-width: 600px; height: auto;" />
-  <figcaption>
-    Peter Shor is known for two groundbreaking contributions: his eponymous algorithm for factoring integers exponentially faster on a quantum computer, and the first proof that quantum error correction is possible.  
-    Image courtesy of <a href="https://news.mit.edu/2022/shor-spielman-breakthrough-prize-0922" target="_blank">MIT News</a>.
-  </figcaption>
-</figure>
+```{figure} figures/peter_shor.jpg
+:name: peter-shor
+:width: 600px
+:align: center
+
+Peter Shor is known for two groundbreaking contributions: his eponymous algorithm for factoring integers exponentially faster on a quantum computer, and the first proof that quantum error correction is possible. Image courtesy of [MIT News](https://news.mit.edu/2022/shor-spielman-breakthrough-prize-0922).
+```
 
 
 
@@ -85,22 +84,23 @@ The next two decades unfolded like a slow crescendo. Trapped ions. Superconducti
 
 Meanwhile, the theory kept evolving. Among the most influential advances were in the theory of surface codes. Introduced by Kitaev, surface codes [(Kitaev, 2003)](http://dx.doi.org/10.1016/S0003-4916(02)00018-0) offered a practical, two-dimensional architecture for quantum error correction—one that meshed beautifully with planar hardware. These codes were not only robust against local noise but also gave researchers a clear roadmap for how to scale: lattice surgery, logical patch codes, and fault-tolerant gates—all with geometric clarity. Surface codes became the lingua franca of fault tolerance, bridging the gap between abstract thresholds and the physical layouts of real devices.
 
-<figure>
-  <img src="figures/surface_code.png" alt="The surface code" style="width: 100%; max-width: 600px; height: auto;" />
-  <figcaption>
-    The surface code traces its origins to the idea of encoding a logical qubit on a toroidal lattice—where qubits and stabilizers wrap around to form a continuous topology. This foundational insight laid the groundwork for modern 2D quantum error-correcting codes. The image is a re-drawing of <a href="https://arthurpesah.me/blog/2023-05-13-surface-code/" target="_blank">this figure</a>.
-    
-  </figcaption>
-</figure>
+```{figure} figures/surface_code.png
+:name: surface-code
+:width: 600px
+:align: center
+
+The surface code traces its origins to the idea of encoding a logical qubit on a toroidal lattice—where qubits and stabilizers wrap around to form a continuous topology. This foundational insight laid the groundwork for modern 2D quantum error-correcting codes. The image is a re-drawing of [this figure](https://arthurpesah.me/blog/2023-05-13-surface-code/).
+```
 
 And yet, full fault tolerance was still far away. In the meantime, a new era took shape—coined the **NISQ** era by John Preskill in 2018, short for Noisy Intermediate-Scale Quantum [(Preskill, 2018)](https://doi.org/10.22331/q-2018-08-06-79). These were the years of imperfect machines: tens or hundreds of qubits, noisy and uncorrected, but still powerful enough to experiment with. Researchers explored variational algorithms [(Peruzzo, 2013)](http://dx.doi.org/10.1038/ncomms5213), quantum machine learning, and hybrid quantum-classical approaches. The results were mixed, sometimes hyped beyond recognition, but they marked a crucial phase: learning to program machines that weren’t quite ready, and dreaming of what might be possible when they were.
 
-<figure>
-  <img src="figures/vqe_sketch.png" alt="Variational Quantum Eigensolver" style="width: 100%; max-width: 600px; height: auto;" />
-  <figcaption>
-  The Variational Quantum Eigensolver (VQE): a quantum circuit prepares a parameterized state, and measurements are sent to a classical optimizer, which updates the parameters to minimize the energy. This hybrid quantum-classical loop is a central algorithmic design in the NISQ era due to its robustness to noise and its ability to leverage classical resources.
-  </figcaption>
-</figure>
+```{figure} figures/vqe_sketch.png
+:name: vqe-sketch
+:width: 600px
+:align: center
+
+The Variational Quantum Eigensolver (VQE): a quantum circuit prepares a parameterized state, and measurements are sent to a classical optimizer, which updates the parameters to minimize the energy. This hybrid quantum-classical loop is a central algorithmic design in the NISQ era due to its robustness to noise and its ability to leverage classical resources.
+```
 
 
 Then, in 2019, a claim that made headlines: Google’s Sycamore processor had achieved *quantum supremacy*—performing a task in 200 seconds that would take the best classical supercomputer thousands of years [(Arute et al., 2019)](https://doi.org/10.1038/s41586-019-1666-5). Critics debated its relevance. Supporters called it a milestone. Either way, it marked the arrival of real hardware that could do something classically infeasible.
@@ -109,14 +109,13 @@ By 2024, that promise deepened. Google’s **Willow** chip broke below the fable
 
 IBM, Intel, IonQ, Honeywell, and others followed close behind. Progress was uneven, full of noise—literal and metaphorical—but unmistakable. Quantum computers, still small and fragile, had begun to breathe.
 
-<figure>
-  <img src="figures/ibm_quantum_computer.jpg" alt="IBM quantum computer" style="width: 100%; max-width: 600px; height: auto;" />
-  <figcaption>
-A detailed view of a superconducting circuit-based quantum processor developed by IBM.
-Image originally sourced from <a href="https://physics.berkeley.edu/news/new-technique-error-prone-quantum-computing-makes-classical-computers-sweat" target="_blank">here</a>.
-    
-  </figcaption>
-</figure>
+```{figure} figures/ibm_quantum_computer.jpg
+:name: ibm-quantum
+:width: 600px
+:align: center
+
+A detailed view of a superconducting circuit-based quantum processor developed by IBM. Image originally sourced from [here](https://physics.berkeley.edu/news/new-technique-error-prone-quantum-computing-makes-classical-computers-sweat).
+```
 
 
 ---
