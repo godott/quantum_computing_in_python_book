@@ -28,3 +28,7 @@ ipywidgets>=7.6.0
 
 # For building and packaging
 packaging>=21.0
+
+# Optional: OpenQASM3 support for circuit translation
+# Uncomment the following line to enable OpenQASM3 to quantikz translation
+# openqasm3>=1.0.0

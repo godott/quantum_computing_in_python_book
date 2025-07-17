@@ -49,6 +49,9 @@ setup(
             "ipykernel>=6.0.0",
             "ipython>=7.30.0",
         ],
+        "translators": [
+            "openqasm3>=1.0.0",
+        ],
     },
     project_urls={
         "Bug Reports": "https://github.com/godott/quantum-book/issues",

@@ -1,7 +1,7 @@
 format: jb-book
-root: preface
+root: intro
 chapters:
-  - file: chap0
+  - file: preface
   - file: chap1
     sections:
       - file: chap1-1

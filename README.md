@@ -16,6 +16,9 @@ pip install -e .
 
 # Or install with all dependencies
 pip install -e ".[notebook]"
+
+# Install with OpenQASM3 translator support
+pip install -e ".[translators]"
 ```
 
 ### Package Installation
@@ -43,11 +46,38 @@ bloch.add_states(plus_state.to_bloch_vector())
 bloch.show()
 ```
 
+### OpenQASM3 to Quantikz Translation
+
+```python
+from qsip import print_qtz
+
+# Define a quantum circuit in OpenQASM3
+qasm_circuit = """
+OPENQASM 3.0;
+include "stdgates.inc";
+
+qubit[2] q;
+bit[2] c;
+
+h q[0];
+cx q[0], q[1];
+c = measure q;
+"""
+
+# Get LaTeX code for quantikz
+latex_code = print_qtz(qasm_circuit, latex=True)
+print(latex_code)
+
+# Or save directly to PDF (requires LaTeX)
+# print_qtz(qasm_circuit, save_fig=True, filename="bell_state.pdf")
+```
+
 ## Features
 
 - **Pure Python Implementation**: No external quantum computing libraries required
 - **Educational Focus**: Clear, understandable code for learning quantum concepts
 - **Visualization Tools**: Bloch sphere visualization for single qubit states
+- **Circuit Translation**: OpenQASM3 to quantikz LaTeX converter for circuit diagrams
 - **Quantum Gates**: Implementation of basic quantum gates (coming soon)
 - **Algorithms**: Classic quantum algorithms (coming soon)
 
@@ -59,6 +89,10 @@ qsip/
 ├── visualization/      # Visualization tools
 │   ├── __init__.py
 │   └── bloch.py       # Bloch sphere implementation
+├── translators/       # Circuit format translators
+│   ├── __init__.py
+│   ├── openqasm_to_quantikz.py  # OpenQASM3 to quantikz converter
+│   └── README.md      # Translator documentation
 ├── gates/             # Quantum gates (coming soon)
 │   └── __init__.py
 ├── algorithms/        # Quantum algorithms (coming soon)
